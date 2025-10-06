@@ -32,7 +32,7 @@ const App = () => {
       <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">Wahyu Budi Prayogo</h6>
-        <p>wahyubudiprayogo8 © All Rights Reserved 2025</p>
+        <p>wahyubudiprayogo8 © AllRights Reserved 2025</p>q
       </footer>
     </div>
   );

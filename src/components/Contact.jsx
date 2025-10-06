@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { Toaster } from "react-hot-toast";
 
 const Contact = () => {
-  const { contacts } = content;
+  const { Contact } = content;
   const form = useRef();
 
   // Sending Email
@@ -14,7 +14,7 @@ const Contact = () => {
     // ambil data dari form
     const formData = new FormData(form.current);
     const data = {
-      title: "Hire Me", // bisa diisi statis atau dari contacts.title
+      title: "Hire Me", // bisa diisi statis atau dari Contact.title
       name: formData.get("from_name"),
       email: formData.get("user_email"),
       message: formData.get("message"),
@@ -45,14 +45,14 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-dark_primary text-white" id="contacts">
+    <section className="bg-dark_primary text-white" id="contact">
       <Toaster />
       <div className="md:container px-5 py-14">
         <h2 className="title !text-white" data-aos="fade-down">
-          {contacts.title}
+          {Contact.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
-          {contacts.subtitle}
+          {Contact.subtitle}
         </h4>
         <br />
         <div className="flex gap-10 md:flex-row flex-col">
@@ -92,7 +92,7 @@ const Contact = () => {
 
           {/* Social Media */}
           <div className="flex-1 flex flex-col gap-5">
-            {contacts.social_media.map((content, i) => (
+            {Contact.social_media.map((content, i) => (
               <div
                 key={i}
                 data-aos="fade-down"

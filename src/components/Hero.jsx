@@ -1,6 +1,6 @@
 // import content
 import { content } from "../Content";
-import AnimatedText from "./animated";
+import AnimatedText from "./Animated";
 const Hero = () => {
   const { hero } = content;
 
