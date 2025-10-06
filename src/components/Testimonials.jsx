@@ -10,16 +10,16 @@ import { Pagination } from "swiper";
 import { useState } from "react";
 
 const Testimonials = () => {
-  const { Testimonials } = content;
+  const { testimonials } = content;
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <section>
       <div className="md:container px-5 pt-14">
         <h2 className="title" data-aos="fade-down">
-          {Testimonials.title}
+          {testimonials.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
-          {Testimonials.subtitle}
+          {testimonials.subtitle}
         </h4>
         <br />
         <Swiper
@@ -38,7 +38,7 @@ const Testimonials = () => {
           modules={[Pagination]}
           className="md:h-96 h-[40rem] max-w-3xl"
         >
-          {Testimonials.testimonials_content.map((content, i) => (
+          {testimonials.testimonials_content.map((content, i) => (
             <SwiperSlide key={i}>
               <div
                 className={` duration-500 bg-bg_light_primary mx-8 border-2 
