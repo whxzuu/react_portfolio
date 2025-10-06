@@ -22,7 +22,7 @@ const customStyles = {
 Modal.setAppElement("#root");
 
 const Skills = () => {
-  const { skills } = content;
+  const { Skills } = content;
   const [modalIsOpen, setIsOpen] = useState(false);
   const [selectSkill, setSelectSkill] = useState(null);
 
@@ -35,7 +35,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="min-h-fit bg-bg_light_primary" id="skills">
+    <section className="min-h-fit bg-bg_light_primary" id="Skills">
       {/* modal */}
       <Modal
         isOpen={modalIsOpen}
@@ -70,14 +70,14 @@ const Skills = () => {
       {/* content */}
       <div className="md:container px-5  py-14">
         <h2 className="title" data-aos="fade-down">
-          {skills.title}
+          {Skills.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
-          {skills.subtitle}
+          {Skills.subtitle}
         </h4>
         <br />
         <div className="flex flex-wrap gap-4 justify-center">
-          {skills.skills_content.map((skill, i) => (
+          {Skills.Skills_content.map((skill, i) => (
             <div
               key={i}
               data-aos="fade-up"
@@ -103,7 +103,7 @@ const Skills = () => {
                   }}
                   className="text-xl absolute top-3 right-3"
                 >
-                  {createElement(skills.icon)}
+                  {createElement(Skills.icon)}
                 </div>
               </div>
             </div>

@@ -1,19 +1,19 @@
 import { content } from "../Content";
 
 const Services = () => {
-  const { services } = content;
+  const { Services } = content;
   return (
-    <section id="services">
+    <section id="Services">
       <div className="md:container px-5 py-14">
         <h2 className="title" data-aos="fade-down">
-          {services.title}
+          {Services.title}
         </h2>
         <h4 className="subtitle" data-aos="fade-down">
-          {services.subtitle}
+          {Services.subtitle}
         </h4>
         <br />
         <div className="flex gap-5 justify-between flex-wrap group">
-          {services.service_content.map((content, i) => (
+          {Services.service_content.map((content, i) => (
             <div
               key={i}
               data-aos="fade-up"
